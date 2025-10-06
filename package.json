@@ -4,7 +4,8 @@
   "description": "Un back/API pour un projet basique pour trier des films dans une petite bdd.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
