@@ -19,15 +19,6 @@ Copie le modèle .env.example vers .env :
 
     cp .env.example .env
     
-Exemple de contenu :
-
-    PORT=4000
-    DB_HOST=127.0.0.1
-    DB_USER=root
-    DB_PASSWORD=secret
-    DB_NAME=films_db
-    DB_PORT=3306
-
 (Ici tout le contenu n'est pas caché pour un aspect pratique mais j'ai mis en place un .env.example pour un côté plus "sécurisé".)
 
 ## Lancement de MySQL avec Docker.
