@@ -2,8 +2,6 @@
 Un back/API pour un projet basique pour trier des films dans une petite bdd.
 Projet réalisé avec Node.js/Express/MySQL.
 
-> [!NOTE]  
-> Les commandes sont à lancer avec bash.
 ## Installation et configuration du projet.
 
 ### 1 - Clonez le projet et installez les dépendances.
@@ -17,18 +15,21 @@ Projet réalisé avec Node.js/Express/MySQL.
 
 Copie le modèle .env.example vers .env :
 
+> [!NOTE]  
+> La commande est à lancer avec bash.
+
     cp .env.example .env
     
 (Ici tout le contenu n'est pas caché pour un aspect pratique mais j'ai mis en place un .env.example pour un côté plus "sécurisé".)
 
 ## Lancement de MySQL avec Docker.
     
-    docker run --name films-mysql \
-    -e MYSQL_ROOT_PASSWORD=secret \
-    -e MYSQL_DATABASE=films_db \
-    -v "$(pwd)/db_init.sql":/docker-entrypoint-initdb.d/db_init.sql:ro \
-    -p 3306:3306 \
-    -d mysql:8.0
+    docker run --name films-mysql `
+  -e MYSQL_ROOT_PASSWORD=secret `
+  -e MYSQL_DATABASE=films_db `
+  -v "${PWD}/db_init.sql:/docker-entrypoint-initdb.d/db_init.sql:ro" `
+  -p 3306:3306 `
+  -d mysql:8.0
     
 (Mais image n'est pas parfaite, j'ai fais ça très rapidement.)
     
@@ -51,6 +52,8 @@ Ou alors si besoin pour le mode dev:
     npm run dev
 
 ## Tester l’API Express.
+> [!NOTE]  
+> Les commandes sont à lancer avec bash.
 ### Liste des films:
 
     curl http://localhost:4000/api/films
