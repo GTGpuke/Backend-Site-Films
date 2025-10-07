@@ -5,7 +5,7 @@ Projet réalisé avec Node.js/Express/MySQL.
 
 ### 1 - Clonez le projet et installez les dépendances.
     
-    git clone https://github.com/ton-profil/films-backend.git
+    git clone https://github.com/GTGpuke/Backend-Site-Films.git
     cd Backend-Site-Films
     npm install
     
