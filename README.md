@@ -25,11 +25,11 @@ Copie le modèle .env.example vers .env :
 ## Lancement de MySQL avec Docker.
     
     docker run --name films-mysql `
-  -e MYSQL_ROOT_PASSWORD=secret `
-  -e MYSQL_DATABASE=films_db `
-  -v "${PWD}/db_init.sql:/docker-entrypoint-initdb.d/db_init.sql:ro" `
-  -p 3306:3306 `
-  -d mysql:8.0
+    -e MYSQL_ROOT_PASSWORD=secret `
+    -e MYSQL_DATABASE=films_db `
+    -v "${PWD}/db_init.sql:/docker-entrypoint-initdb.d/db_init.sql:ro" `
+    -p 3306:3306 `
+    -d mysql:8.0
     
 (Mais image n'est pas parfaite, j'ai fais ça très rapidement.)
     
