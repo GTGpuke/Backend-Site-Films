@@ -1,6 +1,9 @@
 # Backend / API du projet.
 Un back/API pour un projet basique pour trier des films dans une petite bdd.
 Projet réalisé avec Node.js/Express/MySQL.
+
+> [!NOTE]  
+> Les commandes sont à lancer avec bash.
 ## Installation et configuration du projet.
 
 ### 1 - Clonez le projet et installez les dépendances.
