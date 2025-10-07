@@ -4,11 +4,11 @@ Projet réalisé avec Node.js/Express/MySQL.
 ## Installation et configuration du projet.
 
 ### 1 - Cloner le projet et installer les dépendances.
-    ```bash
-        git clone https://github.com/ton-profil/films-backend.git
-        cd films-backend
-        npm install
-    ```
+    
+    git clone https://github.com/ton-profil/films-backend.git
+    cd films-backend
+    npm install
+    
 
 ### 2 - Créer le fichier d’environnement.
 
