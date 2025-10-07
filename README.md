@@ -3,14 +3,14 @@ Un back/API pour un projet basique pour trier des films dans une petite bdd.
 Projet réalisé avec Node.js/Express/MySQL.
 ## Installation et configuration du projet.
 
-### 1 - Cloner le projet et installer les dépendances.
+### 1 - Clonez le projet et installez les dépendances.
     
     git clone https://github.com/ton-profil/films-backend.git
-    cd films-backend
+    cd Backend-Site-Films
     npm install
     
 
-### 2 - Créer le fichier d’environnement.
+### 2 - Créez le fichier d’environnement.
 
 Copie le modèle .env.example vers .env :
 
@@ -39,12 +39,10 @@ Exemple de contenu :
 (Mais image n'est pas parfaite, j'ai fais ça très rapidement.)
     
 ### Vérification que MySQL tourne bien.
- 
+
     docker ps
 
-
     docker exec -it films-mysql mysql -uroot -psecret
-
 
     USE films_db;
     SELECT * FROM films;
